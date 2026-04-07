@@ -89,9 +89,6 @@ export async function submitRegistration(payload: RegistrationPayload) {
 export async function adminLogin(password: string) {
   const response = await adminRequest(`/api/admin/login/`, {
     method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-    },
     body: JSON.stringify({ password }),
   });
 
