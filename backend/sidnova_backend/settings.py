@@ -51,9 +51,8 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     "sidnova_backend.middleware.HealthcheckBypassMiddleware",
     "django.middleware.security.SecurityMiddleware",
-    "whitenoise.middleware.WhiteNoiseMiddleware",
-    "sidnova_backend.middleware.ExplicitCorsMiddleware",
     "corsheaders.middleware.CorsMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
